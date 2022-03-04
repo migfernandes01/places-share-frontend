@@ -196,7 +196,7 @@ function Auth() {
                         {isLogin ? 'LOGIN' : 'SIGN UP'}
                     </Button>
                 </form>
-                {isLogin && <a href='' onClick={loginTestUser}>Login with test user</a>}
+                {isLogin && <a href='#' onClick={loginTestUser}>Login with test user</a>}
                 <br></br>
                 <Button inverse onClick={switchModeHandler}>
                     SWITCH TO {isLogin ? 'SIGN UP' : 'LOGIN'}
