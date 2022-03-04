@@ -1,0 +1,51 @@
+//MainNavigation component
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+import MainHeader from './MainHeader';          //MainHeader component
+import NavLinks from './NavLinks';              //NavLinks component
+import SideDrawer from './SideDrawer';          //SideDrawer component
+import Backdrop from '../UIElements/Backdrop';  //Backdrop component
+
+import './MainNavigation.css';  //CSS styles
+
+function MainNavigation() {
+    //drawer is open state
+    const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+
+    //function to handler drawer opening
+    const openDrawerHandler = () => {
+        setDrawerIsOpen(true);
+    }
+
+    //function to handler drawer closing
+    const closeDrawerHandler = () => {
+        setDrawerIsOpen(false);
+    }
+
+    return (
+        <React.Fragment>
+            {drawerIsOpen && <Backdrop onClick={closeDrawerHandler}/>}
+            <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
+                <nav className='main-navigation__drawer-nav'>
+                    <NavLinks />
+                </nav>
+            </SideDrawer>
+            <MainHeader>
+                <button className='main-navigation__menu-btn' onClick={openDrawerHandler}>
+                    <span />
+                    <span />
+                    <span />
+                </button>
+                <h1 className='main-navigation__title'>
+                    <Link to='/'>📷 places</Link>
+                </h1>
+                <nav className='main-navigation__header-nav'>
+                    <NavLinks />
+                </nav>
+            </MainHeader>
+        </React.Fragment>
+    );
+}
+
+export default MainNavigation;
