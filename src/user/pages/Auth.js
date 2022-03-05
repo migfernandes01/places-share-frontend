@@ -43,7 +43,7 @@ function Auth() {
         //prevent refresh
         event.preventDefault();
 
-        console.log(formState.inputs);
+        //console.log(formState.inputs);
 
         //create request headers
         const requestHeaders = { 'Content-Type': 'application/json' }
