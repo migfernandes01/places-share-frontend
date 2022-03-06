@@ -22,12 +22,10 @@ Fully responsive full-stack web app where users can share places, using a photo,
 - **bcrypt:** To encrypt passwords
 - **JWT:** To create the authorization token
 - **AWS S3:** To store images
-- **Google Maps:** To show and interactive map
+- **Google Maps:** To show an interactive map
 
 ### Goals of this project:
 This was the first project I created using the MERN stack. Before this, I already knew all the technologies of the stack,
 but this is the first time I use them all together. My biggest goal with this app was to learn the proper way of connecting
 the backend and frontend. I can say I learned a lot, especially about designing and structuring the code both on the backend(using different files for routes, controllers, middlewares and models) and the frontend(creating flexible components).
-
-### Screenshots:
 
