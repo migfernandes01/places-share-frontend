@@ -25,8 +25,9 @@ Fully responsive full-stack web app where users can share places, using a photo,
 - **Google Maps:** To show and interactive map
 
 ### Goals of this project:
-This was the first project I created using the MERN stack. Before this, I already knew all the components of the stack,
-but this is the first time I used them all connected.
+This was the first project I created using the MERN stack. Before this, I already knew all the technologies of the stack,
+but this is the first time I use them all together. My biggest goal with this app was to learn the proper way of connecting
+the backend and frontend. I can say I learned a lot, especially about designing and structuring the code both on the backend(using different files for routes, controllers, middlewares and models) and the frontend(creating flexible components).
 
 ### Screenshots:
 
